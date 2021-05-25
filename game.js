@@ -56,6 +56,7 @@ function checkAnswer(colour, indexValue) {
     }
     } else {
       $('body').addClass('game-over');
+      playSound("wrong");
       $('#level-title').text('Game Over, Press Any Key / click here to Restart');
       setTimeout(function(){
         $('body').removeClass('game-over');
